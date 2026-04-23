@@ -1,10 +1,10 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
-//TODO
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
 
-    return 0;
+int main() {
+    int n,m;
+    cin >> n >> m;
+    vector<int> v(n+1);
+    
 }
