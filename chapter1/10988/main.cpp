@@ -1,10 +1,13 @@
 #include <iostream>
-
+#include <algorithm>
 using namespace std;
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    return 0;
+    string str;
+    cin >> str;
+    string new_str;
+    new_str = str;
+    reverse(new_str.begin(),new_str.end());
+    if (str == new_str) cout << 1;
+    else cout << 0;
 }

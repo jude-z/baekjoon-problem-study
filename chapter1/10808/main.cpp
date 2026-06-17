@@ -1,10 +1,15 @@
 #include <iostream>
-
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
+int cnt[26];
 
-    return 0;
+int main() {
+    string str;
+    cin >> str;
+    for (char ch : str) {
+        cnt[ch-'a']++;
+    }
+    for (int val : cnt) {
+        cout << val << " ";
+    }
 }
